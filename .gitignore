@@ -1,0 +1,46 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Environment & secrets
+.env
+.env.*
+
+# Node modules
+node_modules/
+
+# Data & large files
+data/
+annotated_data/
+tmp/
+*.npz
+*.h5
+*.safetensors
+
+# Checkpoints (large JSON blobs)
+enrichment_checkpoint*.json
+
+# Duplicate / intermediate output dirs
+output_fixcheck/
+output_fixcheck_v2/
+output_fixcheck_v3/
+output_gemini_high/
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Generated build artifacts
+app/qa_console/app.js.map
+app/qa_console/app.js.bak
+
+# Derm model cache (SCIN embeddings, etc.)
+data/scin_cache/

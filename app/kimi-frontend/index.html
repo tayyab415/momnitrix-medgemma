@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momnitrix | Maternal Health Triage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <span class="logo-icon">◉</span>
+          <span class="logo-text">Momnitrix</span>
+        </div>
+        <div class="header-meta">
+          <span class="badge">Watch Simulation</span>
+          <span class="version">v1.0</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Configuration Panel -->
+      <section class="card card-config">
+        <div class="card-header">
+          <h2>🔧 Backend Configuration</h2>
+        </div>
+        <div class="form-row">
+          <div class="form-group form-group-wide">
+            <label for="backendUrl">Orchestrator URL</label>
+            <input type="url" id="backendUrl" placeholder="https://your-api.modal.run" 
+                   value="https://tayyabkhn343--momnitrix-api-v2-web.modal.run">
+          </div>
+          <div class="form-group">
+            <label for="requestId">Request ID (optional)</label>
+            <input type="text" id="requestId" placeholder="auto-generated">
+          </div>
+        </div>
+        <div class="config-actions">
+          <button id="checkHealthBtn" class="btn btn-secondary">Check Health</button>
+          <span id="healthStatus" class="status-indicator"></span>
+        </div>
+      </section>
+
+      <!-- Patient Profile & Vitals Grid -->
+      <div class="grid grid-2">
+        <!-- Patient Profile -->
+        <section class="card">
+          <div class="card-header">
+            <h2>👤 Patient Profile</h2>
+            <span class="card-hint">Maternal demographics</span>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="age">Age <span class="range">(13-55)</span></label>
+              <input type="number" id="age" min="13" max="55" value="28">
+            </div>
+            <div class="form-group">
+              <label for="gestWeeks">Gestational Weeks <span class="range">(1-45)</span></label>
+              <input type="number" id="gestWeeks" min="1" max="45" value="32">
+            </div>
+            <div class="form-group">
+              <label for="gravidity">Gravidity (G) <span class="range">(1-12)</span></label>
+              <input type="number" id="gravidity" min="1" max="12" value="2">
+            </div>
+            <div class="form-group">
+              <label for="parity">Parity (P) <span class="range">(0-12)</span></label>
+              <input type="number" id="parity" min="0" max="12" value="1">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bmiGroup">BMI Group</label>
+              <select id="bmiGroup">
+                <option value="underweight">Underweight</option>
+                <option value="normal" selected>Normal</option>
+                <option value="overweight">Overweight</option>
+                <option value="obese">Obese</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="knownConditions">Known Conditions (comma-separated)</label>
+            <input type="text" id="knownConditions" placeholder="e.g., chronic_hypertension, gestational_diabetes">
+          </div>
+          <div class="form-group">
+            <label for="medications">Medications (comma-separated)</label>
+            <input type="text" id="medications" placeholder="e.g., labetalol, insulin, prenatal_vitamins">
+          </div>
+        </section>
+
+        <!-- Vitals -->
+        <section class="card">
+          <div class="card-header">
+            <h2>❤️ Vitals</h2>
+            <span class="card-hint">Watch-simulated readings</span>
+          </div>
+          <div class="form-grid form-grid-3">
+            <div class="form-group">
+              <label for="systolicBp">Systolic BP <span class="range">(50-260)</span></label>
+              <div class="input-unit">
+                <input type="number" id="systolicBp" min="50" max="260" value="125">
+                <span class="unit">mmHg</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="diastolicBp">Diastolic BP <span class="range">(30-160)</span></label>
+              <div class="input-unit">
+                <input type="number" id="diastolicBp" min="30" max="160" value="78">
+                <span class="unit">mmHg</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fastingGlucose">Fasting Glucose <span class="range">(1.0-40.0)</span></label>
+              <div class="input-unit">
+                <input type="number" id="fastingGlucose" min="1" max="40" step="0.1" value="5.2">
+                <span class="unit">mmol/L</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="tempF">Temperature <span class="range">(90-110°F)</span></label>
+              <div class="input-unit">
+                <input type="number" id="tempF" min="90" max="110" step="0.1" value="98.4">
+                <span class="unit">°F</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="restingHr">Heart Rate <span class="range">(20-260)</span></label>
+              <div class="input-unit">
+                <input type="number" id="restingHr" min="20" max="260" value="82">
+                <span class="unit">bpm</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="spo2">SpO2 <span class="range">(40-100)</span></label>
+              <div class="input-unit">
+                <input type="number" id="spo2" min="40" max="100" value="98">
+                <span class="unit">%</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="hrv">HRV <span class="range">(0-300)</span></label>
+              <div class="input-unit">
+                <input type="number" id="hrv" min="0" max="300" step="0.1" value="45">
+                <span class="unit">ms</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Symptoms & Multimodal Inputs -->
+      <div class="grid grid-2">
+        <!-- Symptoms & Notes -->
+        <section class="card">
+          <div class="card-header">
+            <h2>📝 Symptoms & Notes</h2>
+          </div>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="headache">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Headache</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="visionChanges">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Vision Changes</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="decreasedFetalMovement">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Decreased Fetal Movement</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="freeText">Clinical Notes / Free Text</label>
+            <textarea id="freeText" rows="5" placeholder="Describe symptoms, concerns, or any additional context for MedGemma analysis..."></textarea>
+          </div>
+        </section>
+
+        <!-- Multimodal Inputs -->
+        <section class="card">
+          <div class="card-header">
+            <h2>📎 Multimodal Inputs</h2>
+            <span class="card-hint">Images → MedSigLIP/Derm | Audio → MedASR</span>
+          </div>
+          
+          <!-- Wound Image -->
+          <div class="upload-section">
+            <div class="upload-header">
+              <span class="upload-label">🩹 Wound Image (MedSigLIP)</span>
+              <input type="file" id="woundImage" accept="image/*" hidden>
+              <button class="btn btn-small btn-secondary" onclick="document.getElementById('woundImage').click()">
+                Choose File
+              </button>
+            </div>
+            <div class="preview-container" id="woundPreviewContainer">
+              <img id="woundPreview" class="preview-image" alt="Wound preview">
+              <button class="preview-remove" onclick="clearFile('woundImage')">×</button>
+            </div>
+          </div>
+
+          <!-- Skin Image -->
+          <div class="upload-section">
+            <div class="upload-header">
+              <span class="upload-label">🔬 Skin Image (Derm Foundation)</span>
+              <input type="file" id="skinImage" accept="image/*" hidden>
+              <button class="btn btn-small btn-secondary" onclick="document.getElementById('skinImage').click()">
+                Choose File
+              </button>
+            </div>
+            <div class="preview-container" id="skinPreviewContainer">
+              <img id="skinPreview" class="preview-image" alt="Skin preview">
+              <button class="preview-remove" onclick="clearFile('skinImage')">×</button>
+            </div>
+          </div>
+
+          <!-- Audio Input -->
+          <div class="upload-section">
+            <div class="upload-header">
+              <span class="upload-label">🎤 Audio (MedASR)</span>
+              <input type="file" id="audioFile" accept="audio/*" hidden>
+              <button class="btn btn-small btn-secondary" onclick="document.getElementById('audioFile').click()">
+                Upload Audio
+              </button>
+            </div>
+            <div class="audio-controls">
+              <button id="recordStartBtn" class="btn btn-small btn-record">● Record</button>
+              <button id="recordStopBtn" class="btn btn-small btn-stop" disabled>■ Stop</button>
+              <span id="recordStatus" class="record-status">Ready</span>
+              <span id="audioFileName" class="file-name"></span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Action Bar -->
+      <section class="action-bar">
+        <div class="action-group">
+          <button id="randomizeBtn" class="btn btn-random">
+            🎲 Randomize Profile
+          </button>
+          <span class="random-hint">Generate realistic clinical values</span>
+        </div>
+        <div class="action-group action-group-main">
+          <button id="clearBtn" class="btn btn-secondary">Clear All</button>
+          <button id="submitBtn" class="btn btn-primary btn-large">
+            Run Triage
+          </button>
+        </div>
+      </section>
+
+      <!-- Status Messages -->
+      <div id="statusMessages" class="status-messages"></div>
+
+      <!-- Results Section -->
+      <div class="grid grid-2">
+        <!-- Event Timeline -->
+        <section class="card card-results">
+          <div class="card-header">
+            <h2>⚡ Pipeline Events</h2>
+            <span class="card-hint">Real-time orchestration</span>
+          </div>
+          <div class="timeline" id="eventTimeline">
+            <div class="timeline-empty">Submit a triage request to see the orchestration pipeline in action.</div>
+          </div>
+        </section>
+
+        <!-- Final Triage -->
+        <section class="card card-results">
+          <div class="card-header">
+            <h2>🏥 Triage Result</h2>
+            <button id="downloadLogBtn" class="btn btn-small btn-secondary" disabled>
+              Download Log
+            </button>
+          </div>
+          <div class="result-content" id="resultContent">
+            <div class="result-empty">Waiting for triage completion...</div>
+          </div>
+          <div class="json-output">
+            <label>Full JSON Response</label>
+            <textarea id="finalJson" rows="10" readonly></textarea>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Momnitrix Maternal Health Triage System • Local Testing Console</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

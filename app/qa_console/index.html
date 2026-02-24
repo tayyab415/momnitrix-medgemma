@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Momnitrix Watch Prototype</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="bg-aura bg-aura-a"></div>
+  <div class="bg-aura bg-aura-b"></div>
+  <main class="layout">
+    <header class="hero">
+      <div class="hero-top">
+        <p class="eyebrow">Momnitrix</p>
+        <button id="openVitalsBtn" type="button" class="vitals-chip needs-input" aria-controls="inputValuesPanel"
+          aria-expanded="false">
+          Input Values
+          <span id="requiredBadge">6</span>
+        </button>
+      </div>
+      <h1>Pregnancy Assistant</h1>
+      <p class="sub">
+        Simulate patient symptoms.
+      </p>
+      <p class="gpu-note">
+        <span class="gpu-note-icon">⚡</span>
+        Due to GPU cold-start constraints, AI inference may take <strong>2–3 minutes</strong>. Please be patient while
+        the model processes your request.
+      </p>
+    </header>
+
+    <section class="panel panel-compact" hidden>
+      <div class="endpoint-grid">
+        <div class="row">
+          <label for="backendUrl">Backend URL</label>
+          <input id="backendUrl" type="url" value="https://tayyabkhn343--momnitrix-api-v2-web.modal.run"
+            placeholder="https://your-modal-api.modal.run" />
+        </div>
+        <div class="row">
+          <label for="requestId">Request ID (optional)</label>
+          <input id="requestId" type="text" placeholder="auto-generated if empty" />
+        </div>
+      </div>
+      <div class="row row-inline">
+        <button id="checkHealthBtn" type="button">Check Backend Health</button>
+        <span id="healthLine" class="health-line">Not checked.</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Input Mode</h2>
+      <div class="mode-grid">
+        <button id="modeTextBtn" type="button" class="mode-card" data-mode="text">
+          <span class="mode-icon">T</span>
+          <span class="mode-copy">
+            <strong>Text</strong>
+          </span>
+        </button>
+        <button id="modeVoiceBtn" type="button" class="mode-card" data-mode="voice">
+          <span class="mode-icon">V</span>
+          <span class="mode-copy">
+            <strong>Voice</strong>
+          </span>
+        </button>
+        <button id="modeImageBtn" type="button" class="mode-card" data-mode="image">
+          <span class="mode-icon">I</span>
+          <span class="mode-copy">
+            <strong>Image</strong>
+          </span>
+        </button>
+      </div>
+      <div class="diagnose-row">
+        <button id="submitBtn" type="button" class="mode-diagnose">
+          <span class="mode-icon diagnose-icon">✓</span>
+          <span class="mode-copy">
+            <strong>Diagnose</strong>
+            <small>Run AI Triage</small>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section id="inputValuesPanel" class="panel sheet" role="dialog" aria-modal="true"
+      aria-labelledby="inputValuesTitle" hidden>
+      <div class="panel-head">
+        <h2 id="inputValuesTitle">Vitals</h2>
+        <div class="chip-row">
+          <button id="importWatchBtn" type="button">Import from Watch</button>
+          <button id="randomizeBtn" type="button">Randomize</button>
+          <button id="closeVitalsBtn" type="button" class="sheet-close primary">Done</button>
+        </div>
+      </div>
+      <p id="requiredHint" class="required-hint">
+        Missing required inputs: Age, Systolic BP, Diastolic BP, Fasting Glucose, Body Temp, Resting HR.
+      </p>
+      <div class="grid">
+        <section class="subpanel">
+          <h3>Maternal Profile</h3>
+          <div class="field-grid">
+            <div>
+              <label for="age">Age (required)</label>
+              <input id="age" type="number" min="13" max="50" step="1" value="25" />
+            </div>
+            <div>
+              <label for="gestWeeks">Gestational Weeks</label>
+              <input id="gestWeeks" type="number" min="4" max="42" step="1" value="31" />
+            </div>
+            <div>
+              <label for="gravidity">Gravidity (G)</label>
+              <input id="gravidity" type="number" min="1" max="10" step="1" value="2" />
+            </div>
+            <div>
+              <label for="parity">Parity (P)</label>
+              <input id="parity" type="number" min="0" max="10" step="1" value="1" />
+            </div>
+          </div>
+          <div class="row">
+            <label for="bmiGroup">BMI Group</label>
+            <select id="bmiGroup">
+              <option value="underweight">Underweight</option>
+              <option value="normal">Normal</option>
+              <option value="overweight" selected>Overweight</option>
+              <option value="obese">Obese</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="knownConditions">Known Conditions (comma-separated)</label>
+            <input id="knownConditions" type="text" placeholder="chronic_hypertension, gestational_diabetes" />
+          </div>
+          <div class="row">
+            <label for="medications">Medications (comma-separated)</label>
+            <input id="medications" type="text" placeholder="prenatal_vitamins" />
+          </div>
+          <div class="row">
+            <label for="randomProfileMode">Random Profile Mode</label>
+            <input id="randomProfileMode" type="text" readonly value="none yet" />
+          </div>
+        </section>
+
+        <section class="subpanel">
+          <h3>Vitals (Watch Simulation)</h3>
+          <div class="field-grid">
+            <div>
+              <label for="systolicBp">Systolic BP (required)</label>
+              <input id="systolicBp" type="number" min="80" max="180" step="1" value="130" />
+            </div>
+            <div>
+              <label for="diastolicBp">Diastolic BP (required)</label>
+              <input id="diastolicBp" type="number" min="45" max="120" step="1" value="80" />
+            </div>
+            <div>
+              <label for="fastingGlucose">Fasting Glucose mmol/L (required)</label>
+              <input id="fastingGlucose" type="number" min="3" max="20" step="0.1" value="5.1" />
+            </div>
+            <div>
+              <label for="tempF">Body Temp degF (required)</label>
+              <input id="tempF" type="number" min="95" max="104" step="0.1" value="98.0" />
+            </div>
+            <div>
+              <label for="restingHr">Resting HR bpm (required)</label>
+              <input id="restingHr" type="number" min="45" max="140" step="1" value="86" />
+            </div>
+            <div>
+              <label for="spo2">SpO2 (%)</label>
+              <input id="spo2" type="number" min="88" max="100" step="1" value="98" />
+            </div>
+            <div>
+              <label for="hrv">HRV (ms)</label>
+              <input id="hrv" type="number" min="10" max="140" step="0.1" value="42.0" />
+            </div>
+          </div>
+          <div class="checks checks-inline">
+            <label><input id="headache" type="checkbox" /> Headache</label>
+            <label><input id="visionChanges" type="checkbox" /> Vision changes</label>
+            <label><input id="decreasedFetalMovement" type="checkbox" /> Decreased fetal movement</label>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="interactionSheet" class="panel sheet" role="dialog" aria-modal="true"
+      aria-labelledby="interactionTitle" hidden>
+      <div class="panel-head">
+        <h2 id="interactionTitle">Input</h2>
+        <div class="chip-row">
+          <button id="closeInteractionBtn" type="button" class="sheet-close primary">Done</button>
+        </div>
+      </div>
+      <div id="textPanel" class="mode-panel active">
+        <div class="row row-inline" style="justify-content: space-between;">
+          <label for="freeText">Typed Prompt / Clinical Note</label>
+          <button id="clearTextBtn" type="button" class="clear-mode-btn">Clear Note</button>
+        </div>
+        <textarea id="freeText" rows="6" placeholder="Ask a question or describe current symptoms."></textarea>
+      </div>
+
+      <div id="voicePanel" class="mode-panel">
+        <div class="row row-inline" style="justify-content: space-between;">
+          <label for="audioFile">Audio Upload (optional)</label>
+          <button id="clearVoiceBtn" type="button" class="clear-mode-btn">Clear Audio</button>
+        </div>
+        <div class="row">
+          <input id="audioFile" type="file" accept="audio/*" />
+        </div>
+        <div class="row row-inline">
+          <button id="recordStart" type="button">Start Mic Record</button>
+          <button id="recordStop" type="button" disabled>Stop</button>
+          <span id="recordStatus">Not recording</span>
+        </div>
+      </div>
+
+      <div id="imagePanel" class="mode-panel">
+        <div class="row row-inline" style="justify-content: space-between; margin-bottom: 4px;">
+          <label>Image Specialist Files</label>
+          <button id="clearImageBtn" type="button" class="clear-mode-btn">Clear Images</button>
+        </div>
+        <div class="grid-two">
+          <div class="row">
+            <label for="woundImage">Wound Image</label>
+            <input id="woundImage" type="file" accept="image/*" />
+            <img id="woundPreview" class="preview" alt="Wound preview" />
+          </div>
+          <div class="row">
+            <label for="skinImage">Skin Image</label>
+            <input id="skinImage" type="file" accept="image/*" />
+            <img id="skinPreview" class="preview" alt="Skin preview" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel panel-compact">
+      <div class="actions">
+        <button id="clearBtn" type="button">Clear</button>
+        <button id="downloadLogBtn" type="button" disabled>Download Run Log (JSON)</button>
+      </div>
+      <p id="statusLine" class="status">Ready.</p>
+      <p id="validationLine" class="validation"></p>
+    </section>
+
+    <section id="resultsWrapper" class="panel sheet" role="dialog" aria-modal="true" aria-labelledby="triageTitle"
+      hidden>
+      <div class="panel-head">
+        <h2 id="triageTitle">Final Triage</h2>
+        <div class="chip-row">
+          <button id="closeResultsBtn" type="button" class="sheet-close primary">Close Triage</button>
+        </div>
+      </div>
+
+      <div id="inferenceLoader" class="inference-loader" hidden>
+        <div class="loader-content">
+          <div class="loader-spinner"></div>
+          <p class="loader-title">Running AI Inference…</p>
+          <p class="loader-sub">MedGemma is analyzing vitals & context.<br>This may take <strong>2–3 minutes</strong>
+            due to GPU constraints.</p>
+          <p id="loaderElapsed" class="loader-elapsed">Elapsed: 0s</p>
+        </div>
+      </div>
+
+      <article class="result-card is-active" data-card="overview">
+        <h3 style="display: none;">Run Overview</h3>
+        <div class="watch-hero-metrics">
+          <div class="risk-center-display">
+            <span class="muted-label">AI Triage Risk</span>
+            <span id="riskLevel" class="risk-pill-hero">-</span>
+          </div>
+
+          <div class="metric-compact-grid">
+            <div class="metric-compact-box">
+              <span class="muted-label">Policy</span>
+              <span id="policyFloor" class="bold-val">-</span>
+            </div>
+            <div class="metric-compact-box">
+              <span class="muted-label">Latency</span>
+              <span id="diagTotalMs" class="bold-val">-</span>
+            </div>
+            <div class="metric-compact-box">
+              <span class="muted-label">MedGemma</span>
+              <span id="diagMedgemmaMs" class="bold-val">-</span>
+            </div>
+            <div class="metric-compact-box">
+              <span class="muted-label">Model Share</span>
+              <span id="diagModelShare" class="bold-val" style="font-size: 14px;">-</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="result-card" data-card="patient_guidance">
+        <h3>Patient Guidance</h3>
+        <div id="patientMessage" class="result-text">No result yet.</div>
+      </article>
+
+      <article class="result-card" data-card="visit_summary">
+        <h3>Visit Prep Summary</h3>
+        <div id="visitSummary" class="result-text">No result yet.</div>
+      </article>
+
+      <article class="result-card" data-card="specialist_signals">
+        <h3>Specialist Signals Used</h3>
+        <div id="specialistSummary" class="result-text">No specialist outputs yet.</div>
+      </article>
+
+      <article class="result-card" data-card="clinical_reasons">
+        <h3>Clinical Reasons</h3>
+        <ul id="reasonsList" class="bullet-list"></ul>
+      </article>
+
+      <article class="result-card" data-card="action_plan">
+        <h3>Action Plan</h3>
+        <ul id="actionsList" class="bullet-list"></ul>
+      </article>
+
+      <article class="result-card" data-card="raw_json">
+        <h3>Raw JSON (for audit)</h3>
+        <textarea id="finalJson" rows="14" readonly></textarea>
+      </article>
+
+      <div class="carousel-bottom-nav">
+        <button id="prevCardBtn" type="button" class="nav-secondary">Prev</button>
+        <span id="cardPosition">1 / 7</span>
+        <button id="nextCardBtn" type="button" class="nav-primary">Next</button>
+      </div>
+
+      <section class="panel">
+        <h2>Pipeline Events (SSE)</h2>
+        <ol id="eventTimeline" class="timeline"></ol>
+      </section>
+  </main>
+  <div id="inputValuesBackdrop" class="sheet-backdrop" hidden></div>
+
+  <script src="./app.js" defer></script>
+</body>
+
+</html>

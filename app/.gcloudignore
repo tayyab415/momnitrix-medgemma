@@ -1,0 +1,29 @@
+.git
+.gitignore
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+node_modules/
+
+# Large/unrelated app trees (not needed for backend image)
+gemini-creations/
+qa_console/
+kimi-frontend/
+web-app/
+artifacts/
+reports/
+scripts/
+tests/
+mds/
+
+# Local storage and exports
+.momnitrix_local_store/
+AUDIT_REPORT.md
+DEEP_DIVE_ANALYSIS.md
+FRIEND_AUDIT_VALIDATION.md

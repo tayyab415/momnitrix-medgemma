@@ -1,0 +1,28 @@
+# Android/Gradle
+.gradle/
+build/
+local.properties
+*.apk
+*.aab
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Kotlin
+*.class
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+
+# Momnitrix local runtime artifacts
+.momnitrix_local_store/
+
+# Generated QA reports
+reports/*
+!reports/README.md

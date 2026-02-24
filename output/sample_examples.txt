@@ -1,0 +1,339 @@
+=== LOW RISK EXAMPLES ===
+
+Example 1 | row_index=505
+--- PROMPT ---
+Evaluate the following pregnancy vitals and determine risk level:
+
+Patient profile:
+- 17 years old, G1P0
+- Gestation: week 21 (2nd trimester)
+- BMI group: normal
+
+Monitoring data (smartwatch + app logs):
+- BP: 70/50 mmHg
+- Fasting glucose: 7.9 mmol/L
+- Body temp: 98.0°F
+- Resting pulse: 70 bpm
+
+Please return:
+1) LOW/MID/HIGH risk classification
+2) Clinical interpretation tied to threshold values
+3) Likely maternal-fetal complications
+4) Week-21 appropriate management actions
+5) Immediate red-flag symptoms
+--- RESPONSE ---
+RISK LEVEL: LOW
+
+Clinical Assessment: blood pressure of 70/50 mmHg is outside ideal pregnancy range and should be trended closely; fasting glucose of 7.9 mmol/L is above the normal fasting threshold of 5.1 and needs closer metabolic follow-up; while this row is labeled low risk, specific findings warrant closer surveillance: blood pressure is in a marked hypotensive range; glucose level is substantially elevated for fasting pregnancy targets. At gestational week 21, continue routine prenatal monitoring with attention to trend changes.
+
+Potential Complications: Current data do not indicate immediate severe complications, but monitor for possible gestational diabetes, maternal hemodynamic instability, gestational diabetes.
+
+Recommended Actions:
+- Follow fetal movement awareness guidance as gestation advances
+- Continue routine prenatal visits and standard trimester screening
+- Maintain balanced nutrition and hydration with regular light activity
+- Keep sleep and stress routines stable to support cardiovascular health
+
+Warning Signs: Watch for increasing urination, persistent severe headache, reduced fetal movement. Seek immediate medical attention if these occur.
+
+Example 2 | row_index=201
+--- PROMPT ---
+Review these maternal monitoring readings and provide a risk assessment:
+
+Demographics and pregnancy context:
+- Age: 42
+- G1P0
+- Gestational age: 21 weeks (2nd trimester)
+- BMI status: overweight
+
+Latest clinical inputs:
+- Blood pressure: 120/80 mmHg
+- Fasting blood sugar: 7.5 mmol/L
+- Body temperature: 98.0°F
+- Resting heart rate: 70 bpm
+
+Include in your response:
+1. LOW/MID/HIGH classification
+2. Clear rationale linked to values
+3. Relevant obstetric complications
+4. Gestational-age-specific recommended actions
+5. Key warning signs to monitor
+--- RESPONSE ---
+RISK LEVEL: LOW
+
+Clinical Assessment: blood pressure of 120/80 mmHg is within expected pregnancy range (about 90-129 systolic and 60-84 diastolic); fasting glucose of 7.5 mmol/L is above the normal fasting threshold of 5.1 and needs closer metabolic follow-up; while this row is labeled low risk, specific findings warrant closer surveillance: advanced maternal age increases baseline obstetric risk. At 21 weeks gestation, findings support ongoing surveillance and prevention-focused care.
+
+Potential Complications: possible gestational diabetes, placental complications, hypertensive disorders.
+
+Recommended Actions:
+- Keep sleep and stress routines stable to support cardiovascular health
+- Continue routine prenatal visits and standard trimester screening
+- Follow fetal movement awareness guidance as gestation advances
+- Track BP, glucose, and heart rate trends weekly in the app
+
+Warning Signs: Watch for reduced fetal movement, increasing urination, increasing thirst. Seek immediate medical attention if these occur.
+
+Example 3 | row_index=514
+--- PROMPT ---
+Review these maternal monitoring readings and provide a risk assessment:
+
+Demographics and pregnancy context:
+- Age: 15
+- G4P0
+- Gestational age: 19 weeks (2nd trimester)
+- BMI status: normal
+
+Latest clinical inputs:
+- Blood pressure: 80/60 mmHg
+- Fasting blood sugar: 7.5 mmol/L
+- Body temperature: 98.0°F
+- Resting heart rate: 80 bpm
+
+Include in your response:
+1. LOW/MID/HIGH classification
+2. Clear rationale linked to values
+3. Relevant obstetric complications
+4. Gestational-age-specific recommended actions
+5. Key warning signs to monitor
+--- RESPONSE ---
+RISK LEVEL: LOW
+
+Clinical Assessment: blood pressure of 80/60 mmHg is outside ideal pregnancy range and should be trended closely; fasting glucose of 7.5 mmol/L is above the normal fasting threshold of 5.1 and needs closer metabolic follow-up; while this row is labeled low risk, specific findings warrant closer surveillance: blood pressure is in a marked hypotensive range; very young maternal age increases preterm and hypertensive risk. At 19 weeks gestation, findings support ongoing surveillance and prevention-focused care.
+
+Potential Complications: possible gestational diabetes, maternal hemodynamic instability, preterm labor risk.
+
+Recommended Actions:
+- Maintain balanced nutrition and hydration with regular light activity
+- Follow fetal movement awareness guidance as gestation advances
+- Continue routine prenatal visits and standard trimester screening
+- Keep sleep and stress routines stable to support cardiovascular health
+
+Warning Signs: Watch for persistent severe headache, reduced fetal movement, vaginal bleeding. Seek immediate medical attention if these occur.
+
+
+=== MID RISK EXAMPLES ===
+
+Example 1 | row_index=736
+--- PROMPT ---
+Evaluate the following pregnancy vitals and determine risk level:
+
+Patient profile:
+- 25 years old, G2P1
+- Gestation: week 19 (2nd trimester)
+- BMI group: normal
+
+Monitoring data (smartwatch + app logs):
+- BP: 120/90 mmHg
+- Fasting glucose: 6.7 mmol/L
+- Body temp: 101.0°F
+- Resting pulse: 80 bpm
+
+Please return:
+1) LOW/MID/HIGH risk classification
+2) Clinical interpretation tied to threshold values
+3) Likely maternal-fetal complications
+4) Week-19 appropriate management actions
+5) Immediate red-flag symptoms
+--- RESPONSE ---
+RISK LEVEL: MID
+
+Clinical Assessment: fasting glucose is above normal and warrants formal glucose screening; fever adds infectious risk that can destabilize pregnancy; the combination of multiple borderline abnormalities raises cumulative maternal-fetal risk. Given week 19 of pregnancy, in the second trimester, placental growth and glucose screening timing make close trend monitoring important.
+
+Potential Complications: These findings can be associated with possible gestational diabetes, maternal infection, preterm contractions.
+
+Recommended Actions:
+- Schedule formal glucose screening during this gestational window
+- Increase monitoring frequency in the app for temperature, pulse, and symptoms
+- Review nutrition and activity plan tailored for pregnancy
+- Repeat blood pressure checks every 48-72 hours and trend results
+
+Warning Signs: Watch for increasing thirst, abdominal pain, chills. Seek immediate medical attention if these occur.
+
+Example 2 | row_index=14
+--- PROMPT ---
+Evaluate the following pregnancy vitals and determine risk level:
+
+Patient profile:
+- 48 years old, G3P0
+- Gestation: week 38 (3rd trimester)
+- BMI group: overweight
+
+Monitoring data (smartwatch + app logs):
+- BP: 120/80 mmHg
+- Fasting glucose: 11.0 mmol/L
+- Body temp: 98.0°F
+- Resting pulse: 88 bpm
+
+Please return:
+1) LOW/MID/HIGH risk classification
+2) Clinical interpretation tied to threshold values
+3) Likely maternal-fetal complications
+4) Week-38 appropriate management actions
+5) Immediate red-flag symptoms
+--- RESPONSE ---
+RISK LEVEL: MID
+
+Clinical Assessment: glucose is moderately elevated and suggests impaired tolerance with likely gestational diabetes. At 38 weeks gestation, in the third trimester, complications can escalate faster and fetal surveillance becomes more critical.
+
+Potential Complications: possible gestational diabetes.
+
+Recommended Actions:
+- Schedule formal glucose screening during this gestational window
+- Increase monitoring frequency in the app for temperature, pulse, and symptoms
+- Repeat blood pressure checks every 48-72 hours and trend results
+- Review nutrition and activity plan tailored for pregnancy
+
+Warning Signs: Watch for increasing urination, increasing thirst. Seek immediate medical attention if these occur.
+
+Example 3 | row_index=439
+--- PROMPT ---
+Evaluate the following pregnancy vitals and determine risk level:
+
+Patient profile:
+- 35 years old, G2P0
+- Gestation: week 12 (1st trimester)
+- BMI group: normal
+
+Monitoring data (smartwatch + app logs):
+- BP: 120/60 mmHg
+- Fasting glucose: 6.1 mmol/L
+- Body temp: 98.0°F
+- Resting pulse: 76 bpm
+
+Please return:
+1) LOW/MID/HIGH risk classification
+2) Clinical interpretation tied to threshold values
+3) Likely maternal-fetal complications
+4) Week-12 appropriate management actions
+5) Immediate red-flag symptoms
+--- RESPONSE ---
+RISK LEVEL: MID
+
+Clinical Assessment: fasting glucose is above normal and warrants formal glucose screening. Given week 12 of pregnancy, in the first trimester, early baseline stabilization and nausea/hydration management are key.
+
+Potential Complications: possible gestational diabetes.
+
+Recommended Actions:
+- Review nutrition and activity plan tailored for pregnancy
+- Increase monitoring frequency in the app for temperature, pulse, and symptoms
+- Book earlier follow-up prenatal visit to reassess trends
+- Repeat blood pressure checks every 48-72 hours and trend results
+
+Warning Signs: Watch for increasing urination, increasing thirst. Seek immediate medical attention if these occur.
+
+
+=== HIGH RISK EXAMPLES ===
+
+Example 1 | row_index=136
+--- PROMPT ---
+Review these maternal monitoring readings and provide a risk assessment:
+
+Demographics and pregnancy context:
+- Age: 40
+- G2P1
+- Gestational age: 17 weeks (2nd trimester)
+- BMI status: overweight
+
+Latest clinical inputs:
+- Blood pressure: 120/85 mmHg
+- Fasting blood sugar: 15.0 mmol/L
+- Body temperature: 98.0°F
+- Resting heart rate: 60 bpm
+
+Include in your response:
+1. LOW/MID/HIGH classification
+2. Clear rationale linked to values
+3. Relevant obstetric complications
+4. Gestational-age-specific recommended actions
+5. Key warning signs to monitor
+--- RESPONSE ---
+RISK LEVEL: HIGH
+
+Clinical Assessment: blood sugar is significantly elevated and strongly suggests poorly controlled gestational diabetes; advanced maternal age adds independent obstetric risk. At gestational week 17, in the second trimester, placental growth and glucose screening timing make close trend monitoring important.
+
+Potential Complications: Monitor for progression toward gestational diabetes, macrosomia, preterm birth, placental complications.
+
+Recommended Actions:
+- Initiate frequent home BP monitoring twice daily and log readings in the app
+- Schedule or expedite glucose tolerance and diabetes management planning if hyperglycemia persists
+- Order targeted labs (CBC, liver enzymes, creatinine) and fetal growth/wellbeing assessment
+- Arrange urgent obstetric review within 24 hours with repeat BP and urine protein assessment
+
+Warning Signs: Watch for reduced fetal movement, persistent excessive thirst. Seek immediate medical attention if these occur.
+
+Example 2 | row_index=329
+--- PROMPT ---
+Assess maternal health risk for the following pregnant patient:
+
+Demographics:
+- Age: 43 years
+- Gravida 2, Para 1
+- BMI category: overweight
+- Gestational week: 33 (3rd trimester)
+
+Current vitals (from wearable + manual entry):
+- Systolic blood pressure: 120 mmHg
+- Diastolic blood pressure: 80 mmHg
+- Blood sugar (fasting): 15.0 mmol/L
+- Body temperature: 98.0°F
+- Resting heart rate: 76 bpm
+
+Based on these readings, provide:
+1. Risk level classification (LOW, MID, or HIGH)
+2. Clinical reasoning citing specific values and thresholds
+3. Pregnancy complications these patterns may indicate
+4. Recommended actions appropriate for gestational week 33
+5. Warning signs the patient should watch for
+--- RESPONSE ---
+RISK LEVEL: HIGH
+
+Clinical Assessment: blood sugar is significantly elevated and strongly suggests poorly controlled gestational diabetes; advanced maternal age adds independent obstetric risk; third-trimester findings are particularly concerning because deterioration can occur rapidly. At gestational week 33, in the third trimester, complications can escalate faster and fetal surveillance becomes more critical.
+
+Potential Complications: These findings can be associated with gestational diabetes, macrosomia, preterm birth, placental complications.
+
+Recommended Actions:
+- Order targeted labs (CBC, liver enzymes, creatinine) and fetal growth/wellbeing assessment
+- Initiate frequent home BP monitoring twice daily and log readings in the app
+- Schedule or expedite glucose tolerance and diabetes management planning if hyperglycemia persists
+- Advise hydration, rest, and strict symptom tracking with immediate escalation for worsening signs
+
+Warning Signs: Watch for reduced fetal movement, persistent excessive thirst. Seek immediate medical attention if these occur.
+
+Example 3 | row_index=131
+--- PROMPT ---
+Review these maternal monitoring readings and provide a risk assessment:
+
+Demographics and pregnancy context:
+- Age: 32
+- G2P0
+- Gestational age: 37 weeks (3rd trimester)
+- BMI status: normal
+
+Latest clinical inputs:
+- Blood pressure: 140/90 mmHg
+- Fasting blood sugar: 18.0 mmol/L
+- Body temperature: 98.0°F
+- Resting heart rate: 88 bpm
+
+Include in your response:
+1. LOW/MID/HIGH classification
+2. Clear rationale linked to values
+3. Relevant obstetric complications
+4. Gestational-age-specific recommended actions
+5. Key warning signs to monitor
+--- RESPONSE ---
+RISK LEVEL: HIGH
+
+Clinical Assessment: blood pressure is in a hypertensive range, increasing concern for gestational hypertension or preeclampsia; blood sugar is significantly elevated and strongly suggests poorly controlled gestational diabetes; third-trimester findings are particularly concerning because deterioration can occur rapidly. At 37 weeks gestation, in the third trimester, complications can escalate faster and fetal surveillance becomes more critical.
+
+Potential Complications: preeclampsia, gestational hypertension, fetal growth restriction, gestational diabetes, macrosomia, preterm birth.
+
+Recommended Actions:
+- Arrange urgent obstetric review within 24 hours with repeat BP and urine protein assessment
+- Initiate frequent home BP monitoring twice daily and log readings in the app
+- Advise hydration, rest, and strict symptom tracking with immediate escalation for worsening signs
+- Order targeted labs (CBC, liver enzymes, creatinine) and fetal growth/wellbeing assessment
+
+Warning Signs: Watch for reduced fetal movement, persistent excessive thirst, right upper abdominal pain. Seek immediate medical attention if these occur.
+
+

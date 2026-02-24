@@ -1,0 +1,108 @@
+{
+  "required_fields": [
+    "age",
+    "gestational_weeks",
+    "bmi_group",
+    "systolic_bp",
+    "diastolic_bp",
+    "fasting_glucose_mmol_l",
+    "hr",
+    "temp_c"
+  ],
+  "numeric_fields": {
+    "age": {
+      "min": 13,
+      "max": 50
+    },
+    "gestational_weeks": {
+      "min": 4,
+      "max": 42
+    },
+    "gravidity": {
+      "min": 1,
+      "max": 10
+    },
+    "parity": {
+      "min": 0,
+      "max": 10
+    },
+    "systolic_bp": {
+      "min": 80,
+      "max": 180
+    },
+    "diastolic_bp": {
+      "min": 45,
+      "max": 120
+    },
+    "fasting_glucose_mmol_l": {
+      "min": 3.0,
+      "max": 20.0
+    },
+    "hr": {
+      "min": 45,
+      "max": 140
+    },
+    "spo2": {
+      "min": 88,
+      "max": 100
+    },
+    "temp_c": {
+      "min": 35.0,
+      "max": 40.0
+    },
+    "hrv": {
+      "min": 10.0,
+      "max": 140.0
+    }
+  },
+  "enum_fields": {
+    "bmi_group": [
+      "underweight",
+      "normal",
+      "overweight",
+      "obese"
+    ]
+  },
+  "field_aliases": {
+    "gestational_weeks": [
+      "gestation_weeks",
+      "gestation_week",
+      "week",
+      "gestationalAge"
+    ],
+    "fasting_glucose_mmol_l": [
+      "fasting_glucose",
+      "fasting_plasma_glucose",
+      "fasting_glucose_mmol",
+      "BS",
+      "blood_sugar"
+    ],
+    "hr": [
+      "resting_hr",
+      "resting_pulse",
+      "HeartRate",
+      "pulse"
+    ],
+    "temp_c": [
+      "temperature_c",
+      "core_temp_c"
+    ],
+    "age": [
+      "maternal_age",
+      "Age"
+    ],
+    "bmi_group": [
+      "bmi_category"
+    ],
+    "systolic_bp": [
+      "SystolicBP"
+    ],
+    "diastolic_bp": [
+      "DiastolicBP"
+    ],
+    "temp_f": [
+      "BodyTemp",
+      "temperature_f"
+    ]
+  }
+}

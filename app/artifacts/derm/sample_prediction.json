@@ -1,0 +1,43 @@
+{
+  "model": "derm-foundation-classifier-v1",
+  "case": "scin_test_sample_0",
+  "prediction": {
+    "scores": {
+      "Eczema": 0.8771201893203112,
+      "Tinea": 0.04085028375605093,
+      "Folliculitis": 0.015543040452802791,
+      "Allergic Contact Dermatitis": 0.005513074459893818,
+      "Irritant Contact Dermatitis": 0.0027109017940871675,
+      "Insect Bite": 0.0009095749547073898,
+      "Herpes Zoster": 0.00028715310508153593,
+      "Urticaria": 2.820410859548588e-05,
+      "Drug Rash": 7.303685718175516e-06,
+      "Psoriasis": 1.0035299667904035e-08
+    },
+    "top_k": [
+      {
+        "condition": "Eczema",
+        "score": 0.8771
+      },
+      {
+        "condition": "Tinea",
+        "score": 0.0409
+      },
+      {
+        "condition": "Folliculitis",
+        "score": 0.0155
+      },
+      {
+        "condition": "Allergic Contact Dermatitis",
+        "score": 0.0055
+      },
+      {
+        "condition": "Irritant Contact Dermatitis",
+        "score": 0.0027
+      }
+    ],
+    "max_confidence": 0.8771,
+    "low_confidence": false,
+    "threshold": 0.5
+  }
+}

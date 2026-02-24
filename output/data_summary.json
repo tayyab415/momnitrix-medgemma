@@ -1,0 +1,68 @@
+{
+  "input_path": "Maternal Health Risk Data Set.csv",
+  "output_dir": "output",
+  "total_samples": 1014,
+  "train_samples": 912,
+  "eval_samples": 102,
+  "avg_word_length": {
+    "all": 223.13412228796844,
+    "train": 223.50219298245614,
+    "eval": 219.84313725490196
+  },
+  "class_distribution": {
+    "all": {
+      "LOW": 406,
+      "MID": 336,
+      "HIGH": 272
+    },
+    "train": {
+      "LOW": 369,
+      "MID": 301,
+      "HIGH": 242
+    },
+    "eval": {
+      "LOW": 37,
+      "MID": 35,
+      "HIGH": 30
+    }
+  },
+  "generation": {
+    "mode": "template",
+    "gemini_success_count": 0,
+    "fallback_count": 1014,
+    "model": null,
+    "thinking_level": null
+  },
+  "validation": {
+    "bad_prefix_count": 0,
+    "bad_prefix_rows": [],
+    "bad_length_count": 0,
+    "bad_length_rows": [],
+    "disallowed_phrase_hits": [],
+    "distribution_overall": {
+      "LOW": 406,
+      "MID": 336,
+      "HIGH": 272
+    },
+    "distribution_train": {
+      "LOW": 369,
+      "MID": 301,
+      "HIGH": 242
+    },
+    "distribution_test": {
+      "LOW": 37,
+      "MID": 35,
+      "HIGH": 30
+    },
+    "distribution_flags": [],
+    "sample_examples_file": "output/sample_examples.txt"
+  },
+  "artifacts": {
+    "hf_dataset_dir": "output/maternal_health_dataset",
+    "train_jsonl": "output/maternal_health_train.jsonl",
+    "eval_jsonl": "output/maternal_health_eval.jsonl",
+    "summary_json": "output/data_summary.json",
+    "sample_examples": "output/sample_examples.txt",
+    "checkpoint": "enrichment_checkpoint_v3.json"
+  }
+}

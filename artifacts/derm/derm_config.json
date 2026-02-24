@@ -1,0 +1,9 @@
+{
+  "model_name": "google/derm-foundation",
+  "classifier_type": "sklearn.multioutput.MultiOutputClassifier(LogisticRegression)",
+  "embedding_dim": 6144,
+  "threshold": 0.5,
+  "top_k": 5,
+  "seed": 42,
+  "scaled": true
+}

@@ -1,0 +1,12 @@
+.git
+.gitignore
+.DS_Store
+node_modules/
+src/
+__tests__/
+package.json
+package-lock.json
+tsconfig.json
+README.md
+TEST_CHECKLIST.md
+INPUT_RANGE_BASIS.md

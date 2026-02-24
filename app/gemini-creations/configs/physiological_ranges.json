@@ -1,0 +1,36 @@
+{
+  "age": {
+    "min": 16,
+    "max": 50,
+    "notes": "Reproductive range"
+  },
+  "heart_rate_bpm": {
+    "min": 45,
+    "max": 160,
+    "notes": "Pregnancy-adjusted tolerance"
+  },
+  "systolic_bp": {
+    "min": 85,
+    "max": 180,
+    "notes": ">180 = severe range"
+  },
+  "diastolic_bp": {
+    "min": 50,
+    "max": 120
+  },
+  "fasting_glucose_mmol_L": {
+    "min": 3.5,
+    "max": 18.0,
+    "notes": ">15 = critical"
+  },
+  "temperature_c": {
+    "min": 35.0,
+    "max": 40.0,
+    "notes": ">38 = fever"
+  },
+  "spo2_percent": {
+    "min": 88,
+    "max": 100,
+    "notes": "<90 = concerning"
+  }
+}
