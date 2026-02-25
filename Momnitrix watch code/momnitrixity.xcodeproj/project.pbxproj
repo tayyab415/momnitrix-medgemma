@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F91AD4492F4E0C6900812D12 /* momnitrixity Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F91AD4482F4E0C6900812D12 /* momnitrixity Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F91AD44A2F4E0C6900812D12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F91AD43C2F4E0C6900812D12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F91AD4472F4E0C6900812D12;
+			remoteInfo = "momnitrixity Watch App";
+		};
+		F91AD4582F4E0C6E00812D12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F91AD43C2F4E0C6900812D12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F91AD4472F4E0C6900812D12;
+			remoteInfo = "momnitrixity Watch App";
+		};
+		F91AD4622F4E0C6E00812D12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F91AD43C2F4E0C6900812D12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F91AD4472F4E0C6900812D12;
+			remoteInfo = "momnitrixity Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F91AD46E2F4E0C6E00812D12 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F91AD4492F4E0C6900812D12 /* momnitrixity Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F91AD4422F4E0C6900812D12 /* momnitrixity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = momnitrixity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91AD4482F4E0C6900812D12 /* momnitrixity Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "momnitrixity Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91AD4572F4E0C6E00812D12 /* momnitrixity Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "momnitrixity Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91AD4612F4E0C6E00812D12 /* momnitrixity Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "momnitrixity Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F91AD44C2F4E0C6900812D12 /* momnitrixity Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "momnitrixity Watch App";
+			sourceTree = "<group>";
+		};
+		F91AD45A2F4E0C6E00812D12 /* momnitrixity Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "momnitrixity Watch AppTests";
+			sourceTree = "<group>";
+		};
+		F91AD4642F4E0C6E00812D12 /* momnitrixity Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "momnitrixity Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F91AD4452F4E0C6900812D12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91AD4542F4E0C6E00812D12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91AD45E2F4E0C6E00812D12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F91AD43B2F4E0C6900812D12 = {
+			isa = PBXGroup;
+			children = (
+				F91AD44C2F4E0C6900812D12 /* momnitrixity Watch App */,
+				F91AD45A2F4E0C6E00812D12 /* momnitrixity Watch AppTests */,
+				F91AD4642F4E0C6E00812D12 /* momnitrixity Watch AppUITests */,
+				F91AD4432F4E0C6900812D12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F91AD4432F4E0C6900812D12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F91AD4422F4E0C6900812D12 /* momnitrixity.app */,
+				F91AD4482F4E0C6900812D12 /* momnitrixity Watch App.app */,
+				F91AD4572F4E0C6E00812D12 /* momnitrixity Watch AppTests.xctest */,
+				F91AD4612F4E0C6E00812D12 /* momnitrixity Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F91AD4412F4E0C6900812D12 /* momnitrixity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91AD46F2F4E0C6E00812D12 /* Build configuration list for PBXNativeTarget "momnitrixity" */;
+			buildPhases = (
+				F91AD4402F4E0C6900812D12 /* Resources */,
+				F91AD46E2F4E0C6E00812D12 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F91AD44B2F4E0C6900812D12 /* PBXTargetDependency */,
+			);
+			name = momnitrixity;
+			packageProductDependencies = (
+			);
+			productName = momnitrixity;
+			productReference = F91AD4422F4E0C6900812D12 /* momnitrixity.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		F91AD4472F4E0C6900812D12 /* momnitrixity Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91AD46B2F4E0C6E00812D12 /* Build configuration list for PBXNativeTarget "momnitrixity Watch App" */;
+			buildPhases = (
+				F91AD4442F4E0C6900812D12 /* Sources */,
+				F91AD4452F4E0C6900812D12 /* Frameworks */,
+				F91AD4462F4E0C6900812D12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F91AD44C2F4E0C6900812D12 /* momnitrixity Watch App */,
+			);
+			name = "momnitrixity Watch App";
+			packageProductDependencies = (
+			);
+			productName = "momnitrixity Watch App";
+			productReference = F91AD4482F4E0C6900812D12 /* momnitrixity Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F91AD4562F4E0C6E00812D12 /* momnitrixity Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91AD4722F4E0C6E00812D12 /* Build configuration list for PBXNativeTarget "momnitrixity Watch AppTests" */;
+			buildPhases = (
+				F91AD4532F4E0C6E00812D12 /* Sources */,
+				F91AD4542F4E0C6E00812D12 /* Frameworks */,
+				F91AD4552F4E0C6E00812D12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F91AD4592F4E0C6E00812D12 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F91AD45A2F4E0C6E00812D12 /* momnitrixity Watch AppTests */,
+			);
+			name = "momnitrixity Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "momnitrixity Watch AppTests";
+			productReference = F91AD4572F4E0C6E00812D12 /* momnitrixity Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F91AD4602F4E0C6E00812D12 /* momnitrixity Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91AD4752F4E0C6E00812D12 /* Build configuration list for PBXNativeTarget "momnitrixity Watch AppUITests" */;
+			buildPhases = (
+				F91AD45D2F4E0C6E00812D12 /* Sources */,
+				F91AD45E2F4E0C6E00812D12 /* Frameworks */,
+				F91AD45F2F4E0C6E00812D12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F91AD4632F4E0C6E00812D12 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F91AD4642F4E0C6E00812D12 /* momnitrixity Watch AppUITests */,
+			);
+			name = "momnitrixity Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "momnitrixity Watch AppUITests";
+			productReference = F91AD4612F4E0C6E00812D12 /* momnitrixity Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F91AD43C2F4E0C6900812D12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					F91AD4412F4E0C6900812D12 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					F91AD4472F4E0C6900812D12 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					F91AD4562F4E0C6E00812D12 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = F91AD4472F4E0C6900812D12;
+					};
+					F91AD4602F4E0C6E00812D12 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = F91AD4472F4E0C6900812D12;
+					};
+				};
+			};
+			buildConfigurationList = F91AD43F2F4E0C6900812D12 /* Build configuration list for PBXProject "momnitrixity" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F91AD43B2F4E0C6900812D12;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F91AD4432F4E0C6900812D12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F91AD4412F4E0C6900812D12 /* momnitrixity */,
+				F91AD4472F4E0C6900812D12 /* momnitrixity Watch App */,
+				F91AD4562F4E0C6E00812D12 /* momnitrixity Watch AppTests */,
+				F91AD4602F4E0C6E00812D12 /* momnitrixity Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F91AD4402F4E0C6900812D12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91AD4462F4E0C6900812D12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91AD4552F4E0C6E00812D12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91AD45F2F4E0C6E00812D12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F91AD4442F4E0C6900812D12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91AD4532F4E0C6E00812D12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91AD45D2F4E0C6E00812D12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F91AD44B2F4E0C6900812D12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F91AD4472F4E0C6900812D12 /* momnitrixity Watch App */;
+			targetProxy = F91AD44A2F4E0C6900812D12 /* PBXContainerItemProxy */;
+		};
+		F91AD4592F4E0C6E00812D12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F91AD4472F4E0C6900812D12 /* momnitrixity Watch App */;
+			targetProxy = F91AD4582F4E0C6E00812D12 /* PBXContainerItemProxy */;
+		};
+		F91AD4632F4E0C6E00812D12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F91AD4472F4E0C6900812D12 /* momnitrixity Watch App */;
+			targetProxy = F91AD4622F4E0C6E00812D12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F91AD4692F4E0C6E00812D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3XRW7PGF7D;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F91AD46A2F4E0C6E00812D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3XRW7PGF7D;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F91AD46C2F4E0C6E00812D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "momnitrixity Watch App/momnitrixity Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XRW7PGF7D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Momnitrix;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Momnitrix reads your heart rate, SpO2, HRV, and wrist temperature to support maternal health triage.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Momnitrix may write workout sessions to HealthKit.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Momnitrix uses the microphone to record voice notes for AI-powered maternal health triage.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.momnitrixity.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		F91AD46D2F4E0C6E00812D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "momnitrixity Watch App/momnitrixity Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XRW7PGF7D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Momnitrix;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Momnitrix reads your heart rate, SpO2, HRV, and wrist temperature to support maternal health triage.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Momnitrix may write workout sessions to HealthKit.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Momnitrix uses the microphone to record voice notes for AI-powered maternal health triage.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.momnitrixity.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+		F91AD4702F4E0C6E00812D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XRW7PGF7D;
+				INFOPLIST_KEY_CFBundleDisplayName = momnitrixity;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.momnitrixity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F91AD4712F4E0C6E00812D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XRW7PGF7D;
+				INFOPLIST_KEY_CFBundleDisplayName = momnitrixity;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.momnitrixity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F91AD4732F4E0C6E00812D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XRW7PGF7D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.momnitrixity-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/momnitrixity Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/momnitrixity Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		F91AD4742F4E0C6E00812D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XRW7PGF7D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.momnitrixity-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/momnitrixity Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/momnitrixity Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+		F91AD4762F4E0C6E00812D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XRW7PGF7D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.momnitrixity-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "momnitrixity Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		F91AD4772F4E0C6E00812D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XRW7PGF7D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.momnitrixity-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "momnitrixity Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F91AD43F2F4E0C6900812D12 /* Build configuration list for PBXProject "momnitrixity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91AD4692F4E0C6E00812D12 /* Debug */,
+				F91AD46A2F4E0C6E00812D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F91AD46B2F4E0C6E00812D12 /* Build configuration list for PBXNativeTarget "momnitrixity Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91AD46C2F4E0C6E00812D12 /* Debug */,
+				F91AD46D2F4E0C6E00812D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F91AD46F2F4E0C6E00812D12 /* Build configuration list for PBXNativeTarget "momnitrixity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91AD4702F4E0C6E00812D12 /* Debug */,
+				F91AD4712F4E0C6E00812D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F91AD4722F4E0C6E00812D12 /* Build configuration list for PBXNativeTarget "momnitrixity Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91AD4732F4E0C6E00812D12 /* Debug */,
+				F91AD4742F4E0C6E00812D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F91AD4752F4E0C6E00812D12 /* Build configuration list for PBXNativeTarget "momnitrixity Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91AD4762F4E0C6E00812D12 /* Debug */,
+				F91AD4772F4E0C6E00812D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F91AD43C2F4E0C6900812D12 /* Project object */;
+}
