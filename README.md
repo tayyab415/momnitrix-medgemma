@@ -2,9 +2,6 @@
 
 **An AI-powered maternal health triage system that puts clinician-grade risk assessment on a pregnant woman's wrist — powered by four Google HAI-DEF models working in concert.**
 
-📹 **Video Demo**: [INSERT VIDEO LINK]
-🔗 **Source Code**: [INSERT REPO LINK]
-
 ---
 
 ### Project Name
